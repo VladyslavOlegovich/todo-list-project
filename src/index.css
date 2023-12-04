@@ -16,14 +16,10 @@ main {
   max-width: 1000px;
 }
 
-/* h1 {
-  margin-bottom: 0.5rem;
-  color: #4c4c4c;
-} */
 h1 {
   margin-bottom: 0.5rem;
   position: relative;
-  background: none; /* Забираємо фоновий градієнт для h1, який був заданий раніше */
+  background: none;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
