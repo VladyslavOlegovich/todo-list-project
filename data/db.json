@@ -23,12 +23,6 @@
       "title": "test 4",
       "completed": false,
       "id": 9
-    },
-    {
-      "userId": 1,
-      "title": "test 5",
-      "completed": false,
-      "id": 10
     }
   ]
 }

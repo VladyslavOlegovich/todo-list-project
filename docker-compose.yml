@@ -1,0 +1,23 @@
+version: "3"
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "4000:5137"
+    volumes:
+      - ./:/app
+    environment:
+      - NODE_ENV=production
+    depends_on:
+      - json-server
+
+  json-server:
+    build:
+      context: .
+      dockerfile: Dockerfile.server
+    ports:
+      - "3500:3500"
+    volumes:
+      - ./data:/app/data
