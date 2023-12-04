@@ -42,19 +42,21 @@ const List = () => {
       {todos.map((todo) => (
         <TodoItem key={todo.id} todo={todo} />
       ))}
-      <button
-        onClick={() => setPage((prev) => Math.max(prev - 1, 1))}
-        disabled={page === 1 || todosFetching}
-      >
-        Previous
-      </button>
-      <button
-        onClick={() => setPage((prev) => prev + 1)}
-        disabled={page === totalPages || todosFetching}
-      >
-        Next
-      </button>
-      {`${page} / ${totalPages}`}
+      <div className="navigation">
+        <button
+          onClick={() => setPage((prev) => Math.max(prev - 1, 1))}
+          disabled={page === 1 || todosFetching}
+        >
+          Previous
+        </button>
+        <button
+          onClick={() => setPage((prev) => prev + 1)}
+          disabled={page === totalPages || todosFetching}
+        >
+          Next
+        </button>
+        <p>{`${page} / ${totalPages}`}</p>
+      </div>
     </div>
   );
 };

@@ -9,7 +9,7 @@ export const apiSlice = createApi({
   tagTypes: ["Todos"],
   endpoints: (builder) => ({
     getTodos: builder.query({
-      query: (page, limit = 5) => `todos?_page=${page}&_limit=${limit}`,
+      query: (page, limit = 4) => `todos?_page=${page}&_limit=${limit}`,
       providesTags: (result, error, page, limit) =>
         result
           ? [

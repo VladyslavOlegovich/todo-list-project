@@ -29,12 +29,6 @@
       "title": "test 5",
       "completed": false,
       "id": 10
-    },
-    {
-      "userId": 1,
-      "title": "test 6",
-      "completed": false,
-      "id": 11
     }
   ]
 }

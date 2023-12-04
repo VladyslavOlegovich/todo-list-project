@@ -17,7 +17,7 @@ const TodoItem = ({ todo }) => {
   return (
     <article key={todo.id}>
       {isEditing ? (
-        <div>
+        <div className="todo">
           <input
             type="text"
             value={editedTitle}
